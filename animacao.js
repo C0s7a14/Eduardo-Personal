@@ -14,7 +14,7 @@ window.onscroll = () => {
 
 // typing text code //
 const typed = new Typed('.mult-text', {
-    strings: ['Saúde, Força e Autoestima.'  ],
+    strings: ['Saúde, força e autoestima.'  ],
     typeSpeed: 60,
     backSpeed: 60,
     backDelay: 1000,
