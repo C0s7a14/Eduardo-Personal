@@ -49,7 +49,7 @@ header {
     padding: 2rem 9%;
     background: rgb(0, 0, 0,0.5);
     backdrop-filter: blur(10px);
-    transition: all 0.1 ease;
+    
 }
 
 .logo{
@@ -57,7 +57,7 @@ header {
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
-    transition: 0.1 ease-in-out;
+    
 }
 
 .logo:hover{
@@ -77,7 +77,6 @@ span {
     font-weight: 500;
     color: var(--text-color);
     margin-left: 4rem;
-    transition: all 0.1s ease;
     border-bottom: 3px solid transparent;
 }
 
@@ -96,7 +95,7 @@ span {
     border-radius: 1rem;
     font-size: 1.6rem;
     font-weight: 600;
-    transition: all 0.1s ease;
+    
 }
 
 .nav-btn:hover {
@@ -198,8 +197,8 @@ span {
 
 .servicos-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajusta automaticamente */
-    gap: 2rem; /* Espaçamento entre os elementos */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Ajusta automaticamente */
+    gap: 3rem; /* Espaçamento entre os elementos */
     margin-top: 4rem;
 }
 
@@ -209,13 +208,10 @@ span {
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
     padding: 20px;
-    transition: all 0.1s ease;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between; /* Alinha o conteúdo uniformemente */
-    
     width: 100%; /* Ocupa a largura total da coluna */
     min-height: 300px; /* Define uma altura mínima */
 }
@@ -223,8 +219,7 @@ span {
 
 .row img {
     width: 100%; /* Ocupa toda a largura do container */
-    height: 325px; /* Altura fixa */
-    
+    height: 470px; /* Altura fixa */
     object-fit: cover; /* Garante que a imagem não fique distorcida */
     border-radius: 27px;
     margin-bottom: 1.4rem;
@@ -235,6 +230,7 @@ span {
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1.4;
+    color: var(--main-color);
 }
 
 .row:hover{
@@ -257,7 +253,7 @@ span {
     width: 50vw;
     border: 2px solid var(--main-color);
     border-radius: 2rem;
-    transition: 0.1s ease;
+    
 
 }
 
@@ -287,6 +283,9 @@ span {
 .sobre-content h2{
     text-align: left;
     line-height: 1.2;
+}
+.sobre-content span{
+    font-weight: bold;
 }
 
 .sobre-content p {
@@ -512,11 +511,145 @@ span {
     
 }
 
+@media screen and (max-width: 800px) and (max-height: 1280px) {
+    .sobre {
+      display: flex;
+      flex-direction: column; /* coloca imagem e conteúdo em coluna */
+      align-items: center; /* centraliza horizontalmente */
+      text-align: center; /* centraliza o texto */
+      padding: 20px; /* espaço interno */
+    }
+  
+    .sobre-img img {
+      width: 100%; /* imagem ocupa toda a largura */
+      height: auto; /* altura automática para não esticar */
+      max-width: 500px; /* opcional: limita a largura máxima da imagem */
+    }
+  
+    .sobre-content {
+      margin-top: 20px; /* espaço entre imagem e texto */
+      width: 100%;
+      max-width: 600px; /* para o texto não ficar esticado demais */
+    }
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+    
+      .sobre-img img {
+        width: 100%;
+        height: 350px;
+        max-width: 400px; /* um pouco menor para tablet */
+      }
+    
+      .sobre-content {
+        margin-top: 20px;
+        width: 90%;
+        max-width: 500px; /* também ajustado para telas menores */
+      }
+  
+      .planos-content {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+          align-items: center;
+          gap:2.1rem;
+          
+      }
+      .row img {
+          width: 100%; /* Ocupa toda a largura do container */
+          height: 700px; /* Altura fixa */
+         
+      }
+  
+      .inicio {
+          height: auto;
+          min-height: auto;
+          padding-bottom: 40px; /* um espacinho pra respirar */
+        }
+  
+        .inicio-img::before{
+          
+          position: absolute;
+          top: 10%;
+          left: 43%;
+         
+      }
+
+      
+  }
+
+  @media screen and (max-width: 834px) and (max-height: 1180px) {
+    .sobre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .sobre-img img {
+      width: 100%;
+      height: auto;
+      max-width: 400px; /* um pouco menor para tablet */
+    }
+  
+    .sobre-content {
+      margin-top: 20px;
+      width: 90%;
+      max-width: 500px; /* também ajustado para telas menores */
+    }
+
+    .planos-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        align-items: center;
+        gap:2.1rem;
+        
+    }
+    .row img {
+        width: 100%; /* Ocupa toda a largura do container */
+        height: 700px; /* Altura fixa */
+       
+    }
+
+    .inicio {
+        height: auto;
+        min-height: auto;
+        padding-bottom: 40px; /* um espacinho pra respirar */
+      }
+
+      .inicio-img::before{
+        
+        position: absolute;
+        top: 10%;
+        left: 35%;
+       
+    }
+    
+
+    
+  }
+  
+  
 @media (max-width:991px) {
     @media (max-width: 768px) {
         #menu-icon {
             display: block; /* Torna o ícone visível */
             margin-left: 150px;
+        }
+
+        .row img {
+            width: 100%; /* Ocupa toda a largura do container */
+            height: 300px; /* Altura fixa */
+           
+        }
+
+        .sobre-img img{
+            width: auto;
+            
         }
     
         .navbar {
