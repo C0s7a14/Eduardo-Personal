@@ -376,6 +376,25 @@ span {
 }
 
 
+.text-personal{
+    display: block;
+    margin: auto;
+    padding-top: 1.2rem;
+}
+
+.text-personal h3{
+        font-size: 20px;
+        color: var(--main-color);
+        padding-bottom: 1.2rem;
+}
+
+.text-personal li{
+     list-style: disc;
+    font-size: 1.7rem;
+    padding-bottom: 1.1rem;
+}
+
+
 /* review section code */
 
 .avaliacao {
